@@ -8,12 +8,16 @@ body{
     font-family: Helvetica, sans-serif;
 }
 .container{
-    max-width: 1170px;
+    max-width: 1200px;
     margin: auto;
 }
-
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 /* colori del sito 
-blue: #3161E0;
+blue: #255EE9;
 nero: #23272A;
 viola/lilla: #7289DA;
 grigio: #F6F6F6;
@@ -21,20 +25,20 @@ grigio: #F6F6F6;
 
 /* barra di navigazione iniziale dell'header  */
 header nav{
-    background-color: #3161E0;
+    background-color: #255EE9;
     padding: 20px 0;
 }
-.flexbox{
+.flex_nav{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
-header nav ul.flexbox{
+header nav ul.flex_nav{
     min-width: 500px;
     list-style: none;
 }
-header nav ul.flexbox a{
+header nav ul.flex_nav a{
     text-decoration: none;
     color: white;
 }
@@ -54,7 +58,7 @@ a.btn{
     background-size: cover;
     height: 400px;
 }
-.inner_hero{
+.inner_hero_flex{
     width: 750px;
     height: 400px;
     color: white;
@@ -63,23 +67,44 @@ a.btn{
     flex-flow: column wrap;
     justify-content: center;
 }
-.inner_hero h1{
+.inner_hero_flex h1{
     font-size: 45px;
 }
-.inner_hero p{
+.inner_hero_flex p{
     font-size: 18px;
     padding: 30px 0 20px 0;
+    line-height: 26px;
 }
-.inner_hero .btn{
+.inner_hero_flex .btn{
     font-size: 18px;
     padding: 16px 30px;
     border-radius: 27px;
 }
-.inner_hero .btn i{
+.inner_hero_flex .btn i{
     margin-right: 15px;
 }
-.inner_hero a.btn:nth-child(2){
+.inner_hero_flex a.btn:nth-child(2){
     margin-left: 30px;
     background-color: black;
     color: white;
+}
+
+/* sezioni del main */
+main .flex_section{
+    display: flex;
+    margin-top: 300px;
+}
+#margin_header{
+    margin-top: 100px;
+}
+main section h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.descrizione_sito{
+    margin: 35px 0 0 150px;
+}
+section.flex_section p{
+    font-size: 18px;
+    line-height: 26px;
 }
