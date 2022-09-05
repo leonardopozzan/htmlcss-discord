@@ -4,3 +4,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Helvetica, sans-serif;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* colori del sito 
+blue: #3161E0;
+nero: #23272A;
+viola/lilla: #7289DA;
+grigio: #F6F6F6;
+*/
+
+/* barra di navigazione iniziale dell'header  */
+header nav{
+    background-color: #3161E0;
+    padding: 20px 0;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header nav ul.flexbox{
+    min-width: 500px;
+    list-style: none;
+}
+header nav ul.flexbox a{
+    text-decoration: none;
+    color: white;
+}
+header nav a.btn{
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 14px;
+    font-weight: bold ;
+}
