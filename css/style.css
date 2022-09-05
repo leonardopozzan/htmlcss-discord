@@ -1,3 +1,9 @@
+/* colori del sito 
+blue: #255EE9;
+nero: #23272A;
+viola/lilla: #7289DA;
+grigio: #F6F6F6;
+*/
 /* Utility */
 *{
     margin: 0;
@@ -16,12 +22,6 @@ body{
     display: table;
     clear: both;
 }
-/* colori del sito 
-blue: #255EE9;
-nero: #23272A;
-viola/lilla: #7289DA;
-grigio: #F6F6F6;
-*/
 
 /* barra di navigazione iniziale dell'header  */
 header nav{
@@ -41,6 +41,7 @@ header nav ul.flex_nav{
 header nav ul.flex_nav a{
     text-decoration: none;
     color: white;
+    padding-right: 20px;
 }
 a.btn{
     text-decoration: none;
@@ -67,20 +68,26 @@ a.btn{
     flex-flow: column wrap;
     justify-content: center;
 }
+
+/* titolo della pagina */
 .inner_hero_flex h1{
     font-size: 45px;
 }
+
+/* descrizione del sito */
 .inner_hero_flex p{
     font-size: 18px;
     padding: 30px 0 20px 0;
     line-height: 26px;
 }
-.inner_hero_flex .btn{
+
+/* bottoni dell'hero */
+.inner_hero_flex .btn, /*bottone sezione finale*/main .flex_section.center a.btn{
     font-size: 18px;
     padding: 16px 30px;
     border-radius: 27px;
 }
-.inner_hero_flex .btn i{
+.inner_hero_flex .btn i, /*bottone sezione finale*/main .flex_section.center a.btn i{
     margin-right: 15px;
 }
 .inner_hero_flex a.btn:nth-child(2){
@@ -108,7 +115,38 @@ section.flex_section p{
     font-size: 18px;
     line-height: 26px;
 }
+
+/* sezione invertitia */
 main .flex_section.text_left .descrizione_sito{
     order:-1;
     margin: 35px 150px 0px 0;
+}
+
+/* ultima sezione centrata */
+main .flex_section.center{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+main .flex_section.center .descrizione_sito{
+    margin: 0 0 30px 0;
+}
+main .flex_section.center h3{
+    background-image: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 25px;
+    padding: 45px 45px 0;
+    margin-bottom: 30px;
+}
+main .flex_section.center a.btn{
+    background-color: #7289DA;
+    color: white;
+}
+
+/* footer */
+
+footer{
+    background-color: #23272A;
 }
