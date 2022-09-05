@@ -108,3 +108,7 @@ section.flex_section p{
     font-size: 18px;
     line-height: 26px;
 }
+main .flex_section.text_left .descrizione_sito{
+    order:-1;
+    margin: 35px 150px 0px 0;
+}
