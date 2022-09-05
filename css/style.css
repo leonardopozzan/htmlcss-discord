@@ -38,12 +38,48 @@ header nav ul.flexbox a{
     text-decoration: none;
     color: white;
 }
-header nav a.btn{
+a.btn{
     text-decoration: none;
-    display: block;
+    display: inline-block;
     color: black;
     background-color: white;
     border-radius: 20px;
     padding: 10px 14px;
     font-weight: bold ;
+}
+
+/* hero */
+.hero{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    height: 400px;
+}
+.inner_hero{
+    width: 750px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.inner_hero h1{
+    font-size: 45px;
+}
+.inner_hero p{
+    font-size: 18px;
+    padding: 30px 0 20px 0;
+}
+.inner_hero .btn{
+    font-size: 18px;
+    padding: 16px 30px;
+    border-radius: 27px;
+}
+.inner_hero .btn i{
+    margin-right: 15px;
+}
+.inner_hero a.btn:nth-child(2){
+    margin-left: 30px;
+    background-color: black;
+    color: white;
 }
