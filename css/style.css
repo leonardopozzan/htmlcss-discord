@@ -284,6 +284,8 @@ footer .box_end .btn{
     height: 45px;
     background-color: black;
     border: 0;
+    color: white;
+    font-size: 20px;
 }
 .left_accedi .password{
     padding-top: 15px;
