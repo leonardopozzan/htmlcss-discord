@@ -236,7 +236,6 @@ footer .box_end .btn{
 }
 
 /* pagina di accedi a discord */
-
 .accedi{
     background-image: url('../img/bg.svg');
     background-size: cover;
@@ -306,6 +305,7 @@ footer .box_end .btn{
 .left_accedi .mini_option{
     font-size: 14px;
 }
+
 /* box login di destra con qr */
 .accedi .flex_login .right_accedi{
     width: 35%;
