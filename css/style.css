@@ -24,6 +24,12 @@ body{
     clear: both;
 }
 
+/* animazione bottoni */
+.btn:hover{
+    opacity: 0.9;
+    box-shadow: 0 5px 0 0 orange;
+}
+
 /* barra di navigazione iniziale dell'header  */
 header nav{
     background-color: var(--blue);
