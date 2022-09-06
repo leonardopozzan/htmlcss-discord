@@ -26,10 +26,13 @@ body{
 
 /* animazione bottoni */
 .btn:hover{
-    opacity: 0.9;
-    box-shadow: 0 5px 0 0 orange;
+    opacity: 0.8;
+    box-shadow: 2px 3px 20px 0px rgba(20, 20, 20, 0.5);
 }
-
+.btn.b_white:hover{
+    opacity: 1;
+    color: blue;
+}
 /* barra di navigazione iniziale dell'header  */
 header nav{
     background-color: var(--blue);
