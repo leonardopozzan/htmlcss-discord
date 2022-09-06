@@ -247,8 +247,8 @@ footer .box_end .btn{
     color: white;
 }
 .accedi .box_login{
-    width: 900px;
-    height: 500px;
+    width: 850px;
+    height: 450px;
     background-color: var(--nero);
     border-radius: 10px;
 }
@@ -258,12 +258,12 @@ footer .box_end .btn{
 
 /* box login di sinistra */
 .accedi .flex_login .left_accedi{
-    width: 60%;
+    width: 65%;
     color: gray;
-    padding: 40px;
+    padding: 20px 40px 40px;
 }
 .left_accedi div{
-    margin-top: 10px;
+    margin-top: 8px;
 }
 .left_accedi h1{
     text-align: center;
@@ -273,22 +273,21 @@ footer .box_end .btn{
 .left_accedi .sottotitolo{
     text-align: center;
 }
-.left_accedi .user_name{
+.left_accedi .user_name, .left_accedi .password{
     padding-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .left_accedi span{
     color: red;
 }
 .left_accedi input{
     width: 100%;
-    height: 45px;
+    height: 40px;
     background-color: black;
     border: 0;
     color: white;
     font-size: 20px;
-}
-.left_accedi .password{
-    padding-top: 15px;
 }
 .left_accedi a{
     text-decoration: none;
@@ -304,11 +303,13 @@ footer .box_end .btn{
    margin-top: 20px;
    font-size: 18px;
 }
-
+.left_accedi .mini_option{
+    font-size: 14px;
+}
 /* box login di destra con qr */
 .accedi .flex_login .right_accedi{
-    width: 40%;
-    padding: 20px;
+    width: 35%;
+    padding: 20px 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -317,9 +318,14 @@ footer .box_end .btn{
     color: gray;
 }
 .right_accedi img{
-    width: 70%;
+    width: 80%;
+    border-radius: 5px;
 }
 .right_accedi h2{
     color: white;
-    font-size: 30px;
+    font-size: 27px;
+    padding-top: 20px;
+}
+.right_accedi .descrizione_qr{
+    font-size: 18px;
 }
