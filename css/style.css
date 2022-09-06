@@ -100,10 +100,7 @@ a.btn{
 /* sezioni del main */
 main .flex_section{
     display: flex;
-    margin-top: 300px;
-}
-#margin_header{
-    margin-top: 100px;
+    padding: 150px 0;
 }
 main section h2{
     font-size: 40px;
@@ -112,12 +109,23 @@ main section h2{
 .descrizione_sito{
     margin: 35px 0 0 150px;
 }
-section.flex_section p{
+main .flex_section p{
     font-size: 18px;
     line-height: 26px;
 }
 
 /* sezione invertitia */
+.wave{
+    color: var(--grigio);
+    margin-bottom: -10px;
+}
+.wave.rotate{
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+main .bg_gray_wave{
+    background-color: var(--grigio);
+}
 main .flex_section.text_left .descrizione_sito{
     order:-1;
     margin: 35px 150px 0px 0;
@@ -128,7 +136,6 @@ main .flex_section.center{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 100px;
 }
 main .flex_section.center .descrizione_sito{
     margin: 0 0 30px 0;
